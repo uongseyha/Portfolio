@@ -1,0 +1,30 @@
+﻿@import 'bootstrap/dist/css/bootstrap.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@300;400;500;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  min-height: 100%;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Space Grotesk', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+  background:
+    radial-gradient(130% 100% at 0% 0%, #173666 0%, rgba(23, 54, 102, 0) 58%),
+    radial-gradient(120% 100% at 100% 100%, #1c1f44 0%, rgba(28, 31, 68, 0) 60%),
+    #0b1422;
+  color: #e8f1ff;
+  line-height: 1.5;
+}
+
+a {
+  text-decoration: none;
+}

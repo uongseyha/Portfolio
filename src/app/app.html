@@ -1,0 +1,186 @@
+﻿<div class="page-shell">
+  <div class="ambient ambient-one"></div>
+  <div class="ambient ambient-two"></div>
+
+  <header class="top-nav">
+    <a href="#top" class="brand">SU</a>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#journey">Journey</a>
+      <a href="#expertise">Expertise</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#live-demo">Live Demo</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero reveal rise-delay-1">
+      <div class="hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">Enterprise engineering, built with edge</p>
+          <h1>{{ name }}</h1>
+          <h2>{{ role }}</h2>
+          <!-- <p class="lead">
+            Senior .NET and Angular engineer delivering cloud-native platforms, resilient
+            microservices, and product outcomes that scale.
+          </p> -->
+          <div class="fact-grid">
+            @for (fact of quickFacts; track fact) {
+              <div class="fact-chip">{{ fact }}</div>
+            }
+          </div>
+          <div class="hero-actions">
+            <!-- <a class="btn primary" href="mailto:uong.seyha@gmail.com">Start a Conversation</a> -->
+            <a class="btn ghost" href="https://www.linkedin.com/in/uong-seyha" target="_blank" rel="noopener">LinkedIn Profile</a>
+            <a class="btn ghost" href="https://github.com/uongseyha" target="_blank" rel="noopener">GitHub</a>
+            <a class="btn ghost" href="https://1drv.ms/b/c/aae259d9e6648876/IQAmevWb-BLpQrDAGM4fSydTAZ9yWBb2JXD997tdYTNX6sQ?e=P9Q1Xc" target="_blank" rel="noopener">Resume</a>
+          </div>
+        </div>
+
+        <figure class="hero-photo-wrap">
+          <img src="/profile-photo.jpg" alt="Profile image of Seyha Uong" class="hero-photo" />
+        </figure>
+      </div>
+    </section>
+
+    <section id="about" class="panel reveal rise-delay-2">
+      <div class="section-head">
+        <p class="eyebrow">About Me</p>
+        <h3>Hands-on architect. Product-minded builder.</h3>
+      </div>
+      <p>
+        I design and ship full-stack systems where reliability, performance, and delivery speed all matter.
+        My background spans enterprise SaaS, microservices modernization, and data-intensive workflows across
+        .NET, Angular, Azure, and SQL/NoSQL ecosystems.
+      </p>
+      <p>
+        I enjoy solving hard distributed-systems problems, mentoring engineers, and translating business needs
+        into maintainable software that keeps working under real load.
+      </p>
+    </section>
+
+    <section class="metrics reveal rise-delay-3">
+      @for (metric of metrics; track metric.label) {
+        <article class="metric-card">
+          <p class="metric-value">{{ metric.value }}</p>
+          <p class="metric-label">{{ metric.label }}</p>
+          <p class="metric-detail">{{ metric.detail }}</p>
+        </article>
+      }
+    </section>
+
+    <section id="journey" class="panel reveal rise-delay-4">
+      <div class="section-head">
+        <p class="eyebrow">Career Journey</p>
+        <h3>From developer to senior enterprise builder</h3>
+      </div>
+      <div class="timeline">
+        @for (role of journey; track role.company + role.title + role.period) {
+          <article class="timeline-item">
+            <div class="timeline-meta">
+              <p class="period">{{ role.period }}</p>
+              <p class="location">{{ role.location }}</p>
+            </div>
+            <div class="timeline-body">
+              <h4>{{ role.title }}</h4>
+              <p class="company">{{ role.company }}</p>
+              <ul>
+                @for (bullet of role.bullets; track bullet) {
+                  <li>{{ bullet }}</li>
+                }
+              </ul>
+            </div>
+          </article>
+        }
+      </div>
+    </section>
+
+    <section id="expertise" class="panel reveal rise-delay-5">
+      <div class="section-head">
+        <p class="eyebrow">Expertise</p>
+        <h3>Technology stack</h3>
+      </div>
+      <div class="skills-grid">
+        @for (group of skillGroups; track group.title) {
+          <article class="skill-card">
+            <h4>{{ group.title }}</h4>
+            <div class="tag-cloud">
+              @for (item of group.items; track item) {
+                <span>{{ item }}</span>
+              }
+            </div>
+          </article>
+        }
+      </div>
+      <div class="knowledge-grid">
+        <article>
+          <h4>Certifications</h4>
+          <ul>
+            @for (cert of certifications; track cert.title) {
+              <li>
+                <a [href]="cert.link" target="_blank" rel="noopener">{{ cert.title }}</a>
+              </li>
+            }
+          </ul>
+        </article>
+        <article>
+          <h4>Education</h4>
+          <ul>
+            @for (item of education; track item) {
+              <li>{{ item }}</li>
+            }
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- <section id="portfolio" class="panel reveal rise-delay-6">
+      <div class="section-head">
+        <p class="eyebrow">Portfolio Pipeline</p>
+        <h3>Future case studies in progress</h3>
+      </div>
+      <div class="portfolio-grid">
+        @for (item of portfolioPipeline; track item.title) {
+          <article class="portfolio-card">
+            <p class="type">{{ item.type }}</p>
+            <h4>{{ item.title }}</h4>
+            <p class="status">{{ item.status }}</p>
+            <p>{{ item.blurb }}</p>
+          </article>
+        }
+      </div>
+    </section> -->
+
+    <section id="live-demo" class="panel reveal rise-delay-6">
+      <div class="section-head">
+        <p class="eyebrow">Live Demo Project</p>
+        <h3>{{ liveDemoProject.title }}</h3>
+      </div>
+
+      <article class="demo-card">
+        <p>{{ liveDemoProject.summary }}</p>
+        <p>{{ liveDemoProject.purpose }}</p>
+
+        <div class="demo-tech">
+          @for (item of liveDemoProject.tech; track item) {
+            <span>{{ item }}</span>
+          }
+        </div>
+
+        <div class="hero-actions">
+          <a class="btn primary" [href]="liveDemoProject.link" target="_blank" rel="noopener">Open Live Demo</a>
+        </div>
+      </article>
+    </section>
+
+    <section id="contact" class="cta reveal rise-delay-6">
+      <p class="eyebrow">Open To Opportunities</p>
+      <h3>Let’s build software that performs under pressure.</h3>
+      <p>Based in Plainfield, New Jersey. Available for senior engineering and architecture roles.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="mailto:uong.seyha@gmail.com">uong.seyha@gmail.com</a>
+      </div>
+    </section>
+  </main>
+</div>

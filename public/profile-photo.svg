@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 760" role="img" aria-labelledby="title desc">
+  <title id="title">Seyha Uong profile illustration</title>
+  <desc id="desc">Stylized portrait placeholder with initials SU on a gradient background.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f2748" />
+      <stop offset="55%" stop-color="#1e3d6b" />
+      <stop offset="100%" stop-color="#2a1f3d" />
+    </linearGradient>
+    <linearGradient id="ring" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#49d5ff" />
+      <stop offset="100%" stop-color="#ff8a3d" />
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="20%" r="80%">
+      <stop offset="0%" stop-color="#7de4ff" stop-opacity="0.4" />
+      <stop offset="100%" stop-color="#7de4ff" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+
+  <rect width="640" height="760" rx="36" fill="url(#bg)" />
+  <rect width="640" height="760" rx="36" fill="url(#glow)" />
+
+  <circle cx="320" cy="255" r="112" fill="#132742" stroke="url(#ring)" stroke-width="8" />
+  <path d="M196 620c12-102 84-166 124-166s112 64 124 166" fill="#132742" stroke="url(#ring)" stroke-width="8" />
+
+  <circle cx="320" cy="255" r="80" fill="#28466f" />
+  <path d="M241 618c14-76 54-126 79-126s65 50 79 126" fill="#28466f" />
+
+  <text x="320" y="695" text-anchor="middle" font-family="'Segoe UI', Arial, sans-serif" font-size="72" font-weight="700" letter-spacing="8" fill="#e8f1ff">SU</text>
+</svg>
