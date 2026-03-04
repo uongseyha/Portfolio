@@ -54,6 +54,18 @@ ng e2e
 
 Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
+## Deploy to Azure Static Web Apps
+
+This repository includes a GitHub Actions workflow at `.github/workflows/azure-static-web-apps.yml` to deploy the Angular app to Azure Static Web Apps.
+
+1. Create an **Azure Static Web App** resource in Azure Portal.
+2. In your Static Web App resource, open **Manage deployment token** and copy the token.
+3. In GitHub, go to **Settings → Secrets and variables → Actions** and add a repository secret named `AZURE_STATIC_WEB_APPS_API_TOKEN`.
+4. Push to the `main` branch.
+5. GitHub Actions will build (`npm ci`, `npm run build`) and deploy `dist/portfolio-site/browser`.
+
+For SPA routing, the fallback config is stored in `public/staticwebapp.config.json` and is included in the build output automatically.
+
 ## Additional Resources
 
 For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
