@@ -47,7 +47,7 @@ interface Certification {
 })
 export class App {
   protected readonly name = 'Seyha Uong';
-  protected readonly role = '.NET Full Stack Developer';
+  protected readonly role = 'Senior Software Engineer';
 
   protected readonly quickFacts = [
     '10+ years building enterprise software',
