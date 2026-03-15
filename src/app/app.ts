@@ -47,10 +47,10 @@ interface Certification {
 })
 export class App {
   protected readonly name = 'Seyha Uong';
-  protected readonly role = 'Senior Software Engineer';
+  protected readonly role = 'Senior .NET Full Stack Developer';
 
   protected readonly quickFacts = [
-    '10+ years building enterprise software',
+    //'10+ years building enterprise software',
     'Cloud-native SaaS at 100K+ user scale',
     'C#, Python, .NET 10, Angular 21, MS Azure, SQL/NO-SQL, AI-assisted engineering, Vibe Coding'
   ];
@@ -101,41 +101,34 @@ export class App {
       ]
     },
     {
-      title: 'Full-Stack Software Engineer',
+      title: '.NET Full Stack Developer',
       company: 'Comcast',
       location: 'West Chester, Pennsylvania',
       period: 'Aug 2019 - Feb 2020',
       bullets: [
-        'Supported migration from .NET MVC to microservices-based .NET Core and Angular microapps.',
-        'Shipped REST and SOAP integrations with Swagger, Postman, and robust unit-test coverage.',
-        'Maintained quality standards with SonarQube, GitHub workflows, and CI/CD pipelines.'
+        'Migrated .NET MVC monolith to .NET Core microservices, utilizing Angular micro-frontends to enable independent deployments and increase system scalability by 40%.',
+        'Architected high-volume RESTful APIs (Swagger) to bridge legacy SOAP services, streamlining enterprise customer billing workflows and reducing data latency by 15%.',
+        'Automated CI/CD pipelines via GoCD and GitHub, integrating SonarQube and NUnit to enforce code quality and accelerate the release cadence by 20%.'
       ]
     },
     {
-      title: 'Technical Lead',
+      title: '.NET Developer',
       company: 'BiKay',
       location: 'Phnom Penh, Cambodia',
       period: 'Oct 2016 - Oct 2018',
       bullets: [
-        'Led Agile delivery and mentored a team of 10+ engineers across multiple products.',
-        'Built cross-platform applications, integrated external APIs, and improved search performance.',
-        'Partnered closely with product and business stakeholders on roadmap and execution.'
-      ]
-    },
-    {
-      title: 'Senior Software Developer',
-      company: 'KhmerDev',
-      location: 'Phnom Penh, Cambodia',
-      period: 'Jun 2009 - Sep 2016',
-      bullets: [
-        'Delivered enterprise software initiatives with budgets over $300K.',
-        'Designed and deployed business logic and application layers across multiple domains.',
-        'Implemented coaching and technical standards to uplift engineering quality.'
+        'Optimized backend logic and SQL queries for a Music Streaming portal, resulting in a 25% reduction in page load times and improved database responsiveness using Entity Framework Core and LINQ.',
+        'Engineered scalable REST APIs using ASP.NET Core and Entity Framework, reducing data retrieval latency by 20% through optimized LINQ queries and asynchronous programming.',
+        'Streamlined the deployment pipeline by integrating automated unit tests using xUnit and Moq, achieving 80% code coverage for mission-critical services and ensuring stable, bug-free releases within a CI/CD environment'
       ]
     }
   ];
 
   protected readonly skillGroups: SkillGroup[] = [
+    {
+      title: 'AI',
+      items: ['GitHub Copilot','Vibe Coding', 'Claude', 'Cursor']
+    },
     {
       title: 'Backend',
       items: ['C#','Python', '.NET 10', 'ASP.NET MVC', 'Web API / RESTFul APIs', 'Entity Framework', 'ORM', 'Dapper', 'LINQ', 'AutoMapper']
@@ -158,7 +151,7 @@ export class App {
     },
     {
       title: 'Others',
-      items: ['AI-assisted development (Copilot, Vibe Coding)', 'RabbitMQ', 'Kafka', 'Camunda', 'Elasticsearch', 'Kibana', 'Polly', 'Ocelot', 'New Relic', 'SonarQube', 'Swagger', 'Postman', 'Jira', 'Confluence']
+      items: ['RabbitMQ', 'Kafka', 'Camunda', 'Elasticsearch', 'Kibana', 'Polly', 'Ocelot', 'New Relic', 'SonarQube', 'Swagger', 'Postman', 'Jira', 'Confluence']
     }
   ];
 
