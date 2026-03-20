@@ -80,8 +80,8 @@ export class App {
 
   protected readonly journey: TimelineRole[] = [
     {
-      title: 'Agentic AI Engineer | Open new opportunities | Open to relocate',
-      company: 'Freelance',
+      title: 'Agentic AI Engineer | Open new opportunities | Willing to relocate',
+      company: 'Freelance | Part-time',
       location: 'Plainfield, New Jersey',
       period: 'Jan 2026 - Present',
       bullets: [
