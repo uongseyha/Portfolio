@@ -85,11 +85,12 @@ export class App {
       location: 'Plainfield, New Jersey',
       period: 'Jan 2026 - Present',
       bullets: [
-        'Built AI-integrated demo platform using .NET 10, Angular 21, SQL Server, Azure',
-        'Developed professional SPA portfolio with Angular 21',
-        'Studying AI/ML fundamentals and LLM frameworks',
-        'Building autonomous AI agents using Agentic AI tools',
-        'Preparing certifications: IBM, Microsoft, Google AI'
+        'Built AI-integrated applications using .NET, Python, Angular, and LLM frameworks',
+        'Developing autonomous AI agents using modern Agentic AI tools',
+        'Implemented workflows combining LLMs + APIs + backend systems',
+        'Exploring LangChain, prompt engineering, and AI system design',
+        'Building production-ready AI demos and portfolio projects',
+        'Preparing AI certifications: IBM, Microsoft, Google'
       ]
     },{
       title: 'Senior Software Engineer',
@@ -187,11 +188,14 @@ export class App {
 
   protected readonly certifications: Certification[] = [
     {
-      title: 'Intro to AI Agents and Agentic AI',
-      link: 'https://www.udemy.com/certificate/UC-ecb76520-7c9d-4423-9d47-d8d8d991727f/'
+      title: 'IBM: Build RAG Applications',
+      link: 'https://www.coursera.org/account/accomplishments/verify/WKVBODAJTIIV'
+    },{
+      title: 'IBM: Develop Generative AI Applications',
+      link: 'https://www.coursera.org/account/accomplishments/verify/XTO9OAPRMWFV'
     },
     {
-      title: '.NET Microservices with Azure DevOps & AKS | Basic to Master',
+      title: 'UDEMY: .NET Microservices with Azure AKS',
       link: 'https://www.udemy.com/certificate/UC-b419f7f6-7449-4eb9-9b3d-1eb192c1ca6a/'
     }
   ];
