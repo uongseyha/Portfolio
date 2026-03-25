@@ -188,11 +188,16 @@ export class App {
 
   protected readonly certifications: Certification[] = [
     {
+      title: 'IBM: Vector Databases for RAG',
+      link: 'https://www.credly.com/badges/a55d64ab-e054-47f0-af49-75c94f2ca4a8'
+    },
+    {
       title: 'IBM: Build RAG Applications',
-      link: 'https://www.coursera.org/account/accomplishments/verify/WKVBODAJTIIV'
-    },{
+      link: 'https://www.credly.com/badges/3619acd1-dbe4-415e-8ab8-50b6eee6bc4b'
+    },
+    {
       title: 'IBM: Develop Generative AI Applications',
-      link: 'https://www.coursera.org/account/accomplishments/verify/XTO9OAPRMWFV'
+      link: 'https://www.credly.com/badges/23ddde6f-978c-4551-a438-c8a3e0aebd09'
     },
     {
       title: 'UDEMY: .NET Microservices with Azure AKS',
