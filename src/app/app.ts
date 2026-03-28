@@ -188,8 +188,8 @@ export class App {
 
   protected readonly certifications: Certification[] = [
     {
-      title: 'IBM: Vector Databases for RAG',
-      link: 'https://www.credly.com/badges/a55d64ab-e054-47f0-af49-75c94f2ca4a8'
+      title: 'IBM: Advanced RAG with Vector Databases and Retrievers',
+      link: 'https://www.credly.com/badges/0abd2fd9-10c2-4907-a13e-f52358b3bc35'
     },
     {
       title: 'IBM: Build RAG Applications',
