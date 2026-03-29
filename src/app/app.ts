@@ -125,14 +125,23 @@ export class App {
       ]
     },
     {
-      title: '.NET Developer',
+      title: 'Senior .NET Developer',
       company: 'BiKay',
       location: 'Phnom Penh, Cambodia',
       period: 'Oct 2016 - Oct 2018',
       bullets: [
-        'Optimized backend logic and SQL queries for a Music Streaming portal, resulting in a 25% reduction in page load times and improved database responsiveness using Entity Framework Core and LINQ.',
-        'Engineered scalable REST APIs using ASP.NET Core and Entity Framework, reducing data retrieval latency by 20% through optimized LINQ queries and asynchronous programming.',
-        'Streamlined the deployment pipeline by integrating automated unit tests using xUnit and Moq, achieving 80% code coverage for mission-critical services and ensuring stable, bug-free releases within a CI/CD environment'
+        'Supervised and mentored engineers, improving delivery quality, engineering standards, and team productivity',
+        'Defined technical architecture and reviewed designs to ensure scalability, security, and performance',
+        'Optimized applications for security best practices, SEO performance, and page-load efficiency'
+      ]
+    },
+    {
+      title: '.NET Developer',
+      company: 'KHMERDEV',
+      location: 'Phnom Penh, Cambodia',
+      period: 'Jun 2013 - Sep 2016',
+      bullets: [
+        'Delivered 10+ enterprise/medium systems across government, aviation, and insurance domains. Development of mission-critical platforms and established Agile, testing, and performance best practices. '
       ]
     }
   ];
