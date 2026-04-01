@@ -80,23 +80,10 @@ export class App {
 
   protected readonly journey: TimelineRole[] = [
     {
-      title: 'Agentic AI Engineer | Open new opportunities | Willing to relocate',
-      company: 'Freelance | Part-time',
-      location: 'Plainfield, New Jersey',
-      period: 'Jan 2026 - Present',
-      bullets: [
-        'Built AI-integrated applications using .NET, Python, Angular, and LLM frameworks',
-        'Developing autonomous AI agents using modern Agentic AI tools',
-        'Implemented workflows combining LLMs + APIs + backend systems',
-        'Exploring LangChain, prompt engineering, and AI system design',
-        'Building production-ready AI demos and portfolio projects',
-        'Preparing AI certifications: IBM, Microsoft, Google'
-      ]
-    },{
       title: 'Senior Software Engineer',
       company: 'GEP Worldwide',
       location: 'Clark, New Jersey',
-      period: 'Mar 2020 - Dec 2025',
+      period: 'Mar 2020 - Present',
       bullets: [
         'Architected and delivered 200+ frontend and backend microservices for a scalable SaaS platform using C#, .NET 8, ASP.NET Web API, Angular 18, and TypeScript, supporting 100K+ users.',
         'Designed distributed backend architecture with API Gateway and event-driven Publish/Subscribe patterns using Azure Service Bus and Kafka, enabling resilient asynchronous workflows during peak traffic.',
