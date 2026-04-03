@@ -169,24 +169,48 @@
 
     <section id="live-demo" class="panel reveal rise-delay-6">
       <div class="section-head">
-        <p class="eyebrow">Live Demo Project</p>
-        <h3>{{ liveDemoProject.title }}</h3>
+        <p class="eyebrow">Projects</p>
+        <h3>Live demos and open-source builds</h3>
       </div>
 
-      <article class="demo-card">
-        <p>{{ liveDemoProject.summary }}</p>
-        <p>{{ liveDemoProject.purpose }}</p>
+      <div class="carousel">
+        <div class="carousel-track">
+          @for (project of liveDemoProjects; track project.title; let i = $index) {
+            <article class="demo-card" [class.active]="i === activeProjectIndex" [class.prev]="i === (activeProjectIndex - 1 + liveDemoProjects.length) % liveDemoProjects.length" [class.next]="i === (activeProjectIndex + 1) % liveDemoProjects.length">
+              <h4>{{ project.title }}</h4>
+              <p>{{ project.summary }}</p>
+              <p>{{ project.purpose }}</p>
 
-        <div class="demo-tech">
-          @for (item of liveDemoProject.tech; track item) {
-            <span>{{ item }}</span>
+              <div class="demo-tech">
+                @for (item of project.tech; track item) {
+                  <span>{{ item }}</span>
+                }
+              </div>
+
+              <div class="hero-actions">
+                @if (project.link) {
+                  <a class="btn primary" [href]="project.link" target="_blank" rel="noopener">Open Live Demo</a>
+                }
+                @if (project.githubLink) {
+                  <a class="btn secondary" [href]="project.githubLink" target="_blank" rel="noopener">View on GitHub</a>
+                }
+              </div>
+            </article>
           }
         </div>
 
-        <div class="hero-actions">
-          <a class="btn primary" [href]="liveDemoProject.link" target="_blank" rel="noopener">Open Live Demo</a>
+        <div class="carousel-controls">
+          <button class="carousel-btn" (click)="prevProject()" aria-label="Previous project">&#8592;</button>
+
+          <div class="carousel-dots">
+            @for (project of liveDemoProjects; track project.title; let i = $index) {
+              <button class="carousel-dot" [class.active]="i === activeProjectIndex" (click)="goToProject(i)" [attr.aria-label]="'Go to project ' + (i + 1)"></button>
+            }
+          </div>
+
+          <button class="carousel-btn" (click)="nextProject()" aria-label="Next project">&#8594;</button>
         </div>
-      </article>
+      </div>
     </section>
 
     <section id="contact" class="cta reveal rise-delay-6">

@@ -31,7 +31,8 @@ interface LiveDemoProject {
   summary: string;
   purpose: string;
   tech: string[];
-  link: string;
+  link?: string;
+  githubLink?: string;
 }
 
 interface Certification {
@@ -46,6 +47,20 @@ interface Certification {
   styleUrl: './app.scss'
 })
 export class App {
+  protected activeProjectIndex = 0;
+
+  protected prevProject(): void {
+    this.activeProjectIndex =
+      (this.activeProjectIndex - 1 + this.liveDemoProjects.length) % this.liveDemoProjects.length;
+  }
+
+  protected nextProject(): void {
+    this.activeProjectIndex = (this.activeProjectIndex + 1) % this.liveDemoProjects.length;
+  }
+
+  protected goToProject(index: number): void {
+    this.activeProjectIndex = index;
+  }
   protected readonly name = 'Seyha Uong';
   protected readonly role = 'Senior .NET Full Stack Developer';
 
@@ -173,14 +188,24 @@ export class App {
     // }
   ];
 
-  protected readonly liveDemoProject: LiveDemoProject = {
-    title: 'E-Commerce Shopping Cart Demo',
-    summary: 'This project is a small demo of an E-Commerce Shopping Cart application.',
-    purpose:
-      'It is specifically designed for demonstration purposes to showcase modern web development practices and technologies.',
-    tech: ['.NET 10', 'Angular 21', 'EF Core', 'SQL Server', 'GitHub', 'Docker', 'Redis', 'MS Azure'],
-    link: 'https://shopnet2k6.azurewebsites.net/'
-  };
+  protected readonly liveDemoProjects: LiveDemoProject[] = [
+    {
+      title: 'E-Commerce Shopping Cart Demo',
+      summary: 'This project is a small demo of an E-Commerce Shopping Cart application.',
+      purpose:
+        'It is specifically designed for demonstration purposes to showcase modern web development practices and technologies.',
+      tech: ['.NET 10', 'Angular 21', 'EF Core', 'SQL Server', 'GitHub', 'Docker', 'Redis', 'MS Azure'],
+      link: 'https://shopnet2k6.azurewebsites.net/'
+    },
+    {
+      title: 'AI RAG Chatbot — PDF Q&A with IBM watsonx.ai',
+      summary: 'A Retrieval-Augmented Generation (RAG) chatbot that lets users upload any PDF document and ask natural-language questions against it — grounded in the document\'s actual content, not hallucinated guesses.',
+      purpose:
+        'Built to demonstrate end-to-end RAG pipeline engineering: document ingestion, semantic chunking, vector embedding, similarity retrieval, and LLM-powered answer synthesis — using IBM watsonx.ai and LangChain as the AI backbone.',
+      tech: ['Python', 'LangChain', 'IBM watsonx.ai', 'Mistral-Medium LLM', 'IBM Slate-125m Embeddings', 'ChromaDB', 'Gradio', 'PyPDFLoader'],
+      githubLink: 'https://github.com/uongseyha/ai-rag-chatbot'
+    }
+  ];
 
   protected readonly certifications: Certification[] = [
     {
