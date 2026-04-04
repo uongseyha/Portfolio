@@ -1,0 +1,25 @@
+<section id="journey" class="panel reveal rise-delay-4">
+  <div class="section-head">
+    <p class="eyebrow">Career Journey</p>
+    <h3>From developer to senior enterprise builder</h3>
+  </div>
+  <div class="timeline">
+    @for (role of journey; track role.company + role.title + role.period) {
+      <article class="timeline-item">
+        <div class="timeline-meta">
+          <p class="period">{{ role.period }}</p>
+          <p class="location">{{ role.location }}</p>
+        </div>
+        <div class="timeline-body">
+          <h4>{{ role.title }}</h4>
+          <p class="company">{{ role.company }}</p>
+          <ul>
+            @for (bullet of role.bullets; track bullet) {
+              <li>{{ bullet }}</li>
+            }
+          </ul>
+        </div>
+      </article>
+    }
+  </div>
+</section>

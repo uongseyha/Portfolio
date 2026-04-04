@@ -1,0 +1,38 @@
+<section id="expertise" class="panel reveal rise-delay-5">
+  <div class="section-head">
+    <p class="eyebrow">Expertise</p>
+    <h3>Technology stack</h3>
+  </div>
+  <div class="skills-grid">
+    @for (group of skillGroups; track group.title) {
+      <article class="skill-card">
+        <h4>{{ group.title }}</h4>
+        <div class="tag-cloud">
+          @for (item of group.items; track item) {
+            <span>{{ item }}</span>
+          }
+        </div>
+      </article>
+    }
+  </div>
+  <div class="knowledge-grid">
+    <article>
+      <h4>Certifications</h4>
+      <ul>
+        @for (cert of certifications; track cert.title) {
+          <li>
+            <a [href]="cert.link" target="_blank" rel="noopener">{{ cert.title }}</a>
+          </li>
+        }
+      </ul>
+    </article>
+    <article>
+      <h4>Education</h4>
+      <ul>
+        @for (item of education; track item) {
+          <li>{{ item }}</li>
+        }
+      </ul>
+    </article>
+  </div>
+</section>

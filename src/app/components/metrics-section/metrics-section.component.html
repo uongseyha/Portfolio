@@ -1,0 +1,9 @@
+<section class="metrics reveal rise-delay-3">
+  @for (metric of metrics; track metric.label) {
+    <article class="metric-card">
+      <p class="metric-value">{{ metric.value }}</p>
+      <p class="metric-label">{{ metric.label }}</p>
+      <p class="metric-detail">{{ metric.detail }}</p>
+    </article>
+  }
+</section>
