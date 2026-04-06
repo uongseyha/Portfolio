@@ -5,7 +5,7 @@ export const ROLE = 'Senior .NET Full Stack Developer';
 
 export const QUICK_FACTS: string[] = [
   'Cloud-native SaaS at 100K+ user scale',
-  'C#, Python, .NET 10, Angular 21, MS Azure, SQL/NO-SQL, AI-assisted engineering, Vibe Coding'
+  'C#, Python, .NET 8, Angular 18, MS Azure, SQL/NO-SQL, AI-assisted engineering, Vibe Coding'
 ];
 
 export const METRICS: Metric[] = [
