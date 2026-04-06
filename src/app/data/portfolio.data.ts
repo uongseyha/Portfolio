@@ -157,5 +157,13 @@ export const LIVE_DEMO_PROJECTS: LiveDemoProject[] = [
       'Built to demonstrate end-to-end RAG pipeline engineering: document ingestion, semantic chunking, vector embedding, similarity retrieval, and LLM-powered answer synthesis — using IBM watsonx.ai and LangChain as the AI backbone.',
     tech: ['Python', 'LangChain', 'IBM watsonx.ai', 'Mistral-Medium LLM', 'IBM Slate-125m Embeddings', 'ChromaDB', 'Gradio', 'PyPDFLoader'],
     githubLink: 'https://github.com/uongseyha/ai-rag-chatbot'
+  },
+  {
+    title: 'AI RAG YouTube Summarizer',
+    summary: 'A Retrieval-Augmented Generation (RAG) application that extracts YouTube video transcripts and uses IBM WatsonX foundation models to generate concise summaries and answer natural-language questions about video content.',
+    purpose:
+      'Built to demonstrate RAG pipeline engineering for video content: transcript extraction via youtube-transcript-api, text chunking, vector embedding with IBM Slate-30m, FAISS similarity retrieval, and LLM-powered summarization and Q&A using IBM WatsonX Mistral-Medium — all served through a Gradio web UI.',
+    tech: ['Python', 'LangChain', 'IBM watsonx.ai', 'Mistral-Medium LLM', 'IBM Slate-30m Embeddings', 'FAISS', 'Gradio', 'youtube-transcript-api'],
+    githubLink: 'https://github.com/uongseyha/ai-youtube-summarizer'
   }
 ];
