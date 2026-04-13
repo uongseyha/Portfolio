@@ -38,19 +38,15 @@ export const JOURNEY: TimelineRole[] = [
     location: 'Clark, New Jersey',
     period: 'Mar 2020 - Present',
     bullets: [
-      'Architected and delivered 200+ frontend and backend microservices for a scalable SaaS platform using C#, .NET 8, ASP.NET Web API, Angular 18, and TypeScript, supporting 100K+ users.',
-      'Designed distributed backend architecture with API Gateway and event-driven Publish/Subscribe patterns using Azure Service Bus and Kafka, enabling resilient asynchronous workflows during peak traffic.',
-      'Applied Microservices architecture, Domain-Driven Design (DDD), SOLID principles, OOP, and proven design patterns to build highly maintainable, testable, and scalable systems.',
-      'Built modern, reusable Angular 18 applications with RxJS, NgRx, Bootstrap, Material UI, Tailwind, and SignalR, improving state management and real-time user experiences.',
-      'Developed robust RESTful APIs and orchestrated critical business processes with Camunda BPM, including Save/Amend/Publish Product, Checkout, and Order Creation workflows.',
-      'Improved SQL Server performance through normalization, indexing strategies (clustered/non-clustered), partitioning, query optimization, and execution-plan tuning.',
-      'Designed and operated polyglot data platforms across SQL Server, PostgreSQL, MySQL, MongoDB, Redis, Azure Cosmos DB, and Couchbase, with ETL and reporting pipelines using SSIS/SSRS.',
-      'Integrated Azure Logic Apps to streamline secure inbound and outbound third-party system communication.',
-      'Deployed and operated cloud-native workloads on Azure App Services, Functions, and AKS using Docker, Kubernetes, and CI/CD pipelines, with observability via Elastic/Kibana, Kusto, New Relic, and quality governance through SonarQube.',
-      'Delivered dozens of high-impact features with zero critical production defects by enforcing unit tests, code reviews, CI/CD quality gates, and disciplined release practices.',
-      'Increased engineering productivity by 30–50% through AI-assisted development, SonarQube automation, and test-driven development (TDD).',
-      'Owned the full SDLC, from requirements analysis and architecture to development, deployment, and production support.',
-      'Collaborated cross-functionally with Product, UX, QA, and DevOps teams in Agile/Scrum to deliver predictable monthly production releases.'
+      'Architected and maintained cloud-native microservices architecture platform using C#, .NET 8, Python, EF Core, Dapper, and SQL Server/MongoDB, supporting 10K+ product uploads per batch with high reliability.',
+      'Designed and implemented event driven architecture, API Gateway, Publish/Subscribe patterns using Azure Service Bus and Kafka to enable scalable asynchronous workflows.',
+      'Improved frontend performance (Angular, RxJS, NgRx) resulting in 30% faster load times.',
+      'Implemented CI/CD pipelines using GitHub Actions and Azure DevOps, reducing deployment time by 35%.',
+      'Designed end-to-end checkout workflow using BPM (Camunda), reducing processing errors by 25%.',
+      'Optimized SQL Server and NoSQL databases (MongoDB, Cosmos DB, Redis) for performance and scalability.',
+      'Enhanced observability using Elasticsearch, Kibana, New Relic, and Kusto, reducing incident by 40%.',
+      'Boosted engineering productivity 30–50% by implementing AI-assisted development practices using GitHub Copilot, Claude, Cursor',
+      'Mentored junior engineers and conducted code reviews, improving team code quality and consistency.'
     ]
   },
   {
@@ -123,12 +119,16 @@ export const CERTIFICATIONS: Certification[] = [
     link: 'https://www.credly.com/badges/0abd2fd9-10c2-4907-a13e-f52358b3bc35'
   },
   {
-    title: 'IBM: Build RAG Applications',
-    link: 'https://www.credly.com/badges/3619acd1-dbe4-415e-8ab8-50b6eee6bc4b'
+    title: 'IBM: Agentic AI with LangChain and LangGraph',
+    link: 'https://www.credly.com/badges/a75bc271-f060-44e4-aaf9-60abad163a84'
   },
   {
-    title: 'IBM: Develop Generative AI Applications',
-    link: 'https://www.credly.com/badges/23ddde6f-978c-4551-a438-c8a3e0aebd09'
+    title: 'IBM: Fundamentals of Building AI Agents',
+    link: 'https://www.credly.com/badges/e0303021-8e44-4c98-82a2-e6a42576258a'
+  },
+  {
+    title: 'IBM: Build Multimodal Generative AI Applications',
+    link: 'https://coursera.org/share/7685bbff7db50ea33801ac4bf7c70ed7'
   },
   {
     title: 'UDEMY: .NET Microservices with Azure AKS',
