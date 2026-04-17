@@ -128,7 +128,7 @@ export const CERTIFICATIONS: Certification[] = [
   },
   {
     title: 'IBM: Build Multimodal Generative AI Applications',
-    link: 'https://coursera.org/share/7685bbff7db50ea33801ac4bf7c70ed7'
+    link: 'https://www.credly.com/badges/d93633f5-8fb6-4ecb-b31d-6489d1239eaf'
   },
   {
     title: 'UDEMY: .NET Microservices with Azure AKS',
