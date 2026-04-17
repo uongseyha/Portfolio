@@ -115,6 +115,10 @@ export const SKILL_GROUPS: SkillGroup[] = [
 
 export const CERTIFICATIONS: Certification[] = [
   {
+    title: 'IBM: RAG for Generative AI Applications Specialization',
+    link: 'https://www.credly.com/badges/c15f2b9d-d16d-40cc-9eab-93506297a8f1'
+  },
+  {
     title: 'IBM: Advanced RAG with Vector Databases and Retrievers',
     link: 'https://www.credly.com/badges/0abd2fd9-10c2-4907-a13e-f52358b3bc35'
   },
