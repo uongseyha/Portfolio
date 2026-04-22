@@ -5,7 +5,7 @@ export const ROLE = 'Senior .NET Full Stack Developer';
 
 export const QUICK_FACTS: string[] = [
   'Cloud-native SaaS at 100K+ user scale',
-  'C#, Python, .NET 8, Angular 18, MS Azure, SQL/NO-SQL, AI-assisted engineering, Vibe Coding'
+  'C#, Python, .NET 8, Angular 18, MS Azure, SQL/NO-SQL, AI-assisted, Vibe Coding'
 ];
 
 export const METRICS: Metric[] = [
@@ -28,6 +28,40 @@ export const METRICS: Metric[] = [
     value: '20%+',
     label: 'Performance Improvements',
     detail: 'Data and API optimizations that improved speed and responsiveness.'
+  }
+];
+
+export const LIVE_DEMO_PROJECTS: LiveDemoProject[] = [
+  {
+    title: 'E-Commerce Shopping Cart Demo',
+    summary: 'This project is a small demo of an E-Commerce Shopping Cart application.',
+    purpose:
+      'It is specifically designed for demonstration purposes to showcase modern web development practices and technologies.',
+    tech: ['.NET 10', 'Angular 21', 'EF Core', 'SQL Server', 'GitHub', 'Docker', 'Redis', 'MS Azure'],
+    link: 'https://shopnet2k6.azurewebsites.net/'
+  },
+  {
+    title: 'AI Document RAG QA Multi-Agents on LangGraph',
+    summary: 'A document question-answering system that uses a multi-agent pipeline built on LangGraph to deliver accurate, verified answers from uploaded documents — rejecting off-topic queries and re-researching when answers fail verification.',
+    purpose: 'Build a self-correcting document Q&A system that refuses off-topic questions, generates grounded answers using only evidence from uploaded documents, verifies every answer for factual support, and supports multiple document formats with a simple drag-and-drop web UI.',
+    tech: ['Python', 'LangGraph', 'OpenAI GPT-4o-mini', 'ChromaDB', 'BM25', 'Docling', 'Gradio', 'LangChain'],
+    githubLink: 'https://github.com/uongseyha/ai-doc-rag-qa-multi-agents-langGraph'
+  },
+  {
+    title: 'AI RAG YouTube Summarizer',
+    summary: 'A Retrieval-Augmented Generation (RAG) application that extracts YouTube video transcripts and uses IBM WatsonX foundation models to generate concise summaries and answer natural-language questions about video content.',
+    purpose:
+      'Built to demonstrate RAG pipeline engineering for video content: transcript extraction via youtube-transcript-api, text chunking, vector embedding with IBM Slate-30m, FAISS similarity retrieval, and LLM-powered summarization and Q&A using IBM WatsonX Mistral-Medium — all served through a Gradio web UI.',
+    tech: ['Python', 'LangChain', 'IBM watsonx.ai', 'Mistral-Medium LLM', 'IBM Slate-30m Embeddings', 'FAISS', 'Gradio', 'youtube-transcript-api'],
+    githubLink: 'https://github.com/uongseyha/ai-youtube-summarizer'
+  },
+  {
+    title: 'AI RAG Chatbot — PDF Q&A with IBM watsonx.ai',
+    summary: "A Retrieval-Augmented Generation (RAG) chatbot that lets users upload any PDF document and ask natural-language questions against it — grounded in the document's actual content, not hallucinated guesses.",
+    purpose:
+      'Built to demonstrate end-to-end RAG pipeline engineering: document ingestion, semantic chunking, vector embedding, similarity retrieval, and LLM-powered answer synthesis — using IBM watsonx.ai and LangChain as the AI backbone.',
+    tech: ['Python', 'LangChain', 'IBM watsonx.ai', 'Mistral-Medium LLM', 'IBM Slate-125m Embeddings', 'ChromaDB', 'Gradio', 'PyPDFLoader'],
+    githubLink: 'https://github.com/uongseyha/ai-rag-chatbot'
   }
 ];
 
@@ -143,38 +177,4 @@ export const CERTIFICATIONS: Certification[] = [
 export const EDUCATION: string[] = [
   'Master of Computer Science - Maharishi University of Management (Fairfield, Iowa)',
   'Bachelor of Management Information Systems - SETEC Institute (Phnom Penh, Cambodia)'
-];
-
-export const LIVE_DEMO_PROJECTS: LiveDemoProject[] = [
-  {
-    title: 'E-Commerce Shopping Cart Demo',
-    summary: 'This project is a small demo of an E-Commerce Shopping Cart application.',
-    purpose:
-      'It is specifically designed for demonstration purposes to showcase modern web development practices and technologies.',
-    tech: ['.NET 10', 'Angular 21', 'EF Core', 'SQL Server', 'GitHub', 'Docker', 'Redis', 'MS Azure'],
-    link: 'https://shopnet2k6.azurewebsites.net/'
-  },
-  {
-    title: 'AI Document RAG QA Multi-Agents on LangGraph',
-    summary: 'A document question-answering system that uses a multi-agent pipeline built on LangGraph to deliver accurate, verified answers from uploaded documents — rejecting off-topic queries and re-researching when answers fail verification.',
-    purpose: 'Build a self-correcting document Q&A system that refuses off-topic questions, generates grounded answers using only evidence from uploaded documents, verifies every answer for factual support, and supports multiple document formats with a simple drag-and-drop web UI.',
-    tech: ['Python', 'LangGraph', 'OpenAI GPT-4o-mini', 'ChromaDB', 'BM25', 'Docling', 'Gradio', 'LangChain'],
-    githubLink: 'https://github.com/uongseyha/ai-doc-rag-qa-multi-agents-langGraph'
-  },
-  {
-    title: 'AI RAG YouTube Summarizer',
-    summary: 'A Retrieval-Augmented Generation (RAG) application that extracts YouTube video transcripts and uses IBM WatsonX foundation models to generate concise summaries and answer natural-language questions about video content.',
-    purpose:
-      'Built to demonstrate RAG pipeline engineering for video content: transcript extraction via youtube-transcript-api, text chunking, vector embedding with IBM Slate-30m, FAISS similarity retrieval, and LLM-powered summarization and Q&A using IBM WatsonX Mistral-Medium — all served through a Gradio web UI.',
-    tech: ['Python', 'LangChain', 'IBM watsonx.ai', 'Mistral-Medium LLM', 'IBM Slate-30m Embeddings', 'FAISS', 'Gradio', 'youtube-transcript-api'],
-    githubLink: 'https://github.com/uongseyha/ai-youtube-summarizer'
-  },
-  {
-    title: 'AI RAG Chatbot — PDF Q&A with IBM watsonx.ai',
-    summary: "A Retrieval-Augmented Generation (RAG) chatbot that lets users upload any PDF document and ask natural-language questions against it — grounded in the document's actual content, not hallucinated guesses.",
-    purpose:
-      'Built to demonstrate end-to-end RAG pipeline engineering: document ingestion, semantic chunking, vector embedding, similarity retrieval, and LLM-powered answer synthesis — using IBM watsonx.ai and LangChain as the AI backbone.',
-    tech: ['Python', 'LangChain', 'IBM watsonx.ai', 'Mistral-Medium LLM', 'IBM Slate-125m Embeddings', 'ChromaDB', 'Gradio', 'PyPDFLoader'],
-    githubLink: 'https://github.com/uongseyha/ai-rag-chatbot'
-  }
 ];
