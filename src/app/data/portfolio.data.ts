@@ -155,12 +155,11 @@ export const LIVE_DEMO_PROJECTS: LiveDemoProject[] = [
     link: 'https://shopnet2k6.azurewebsites.net/'
   },
   {
-    title: 'AI RAG Chatbot — PDF Q&A with IBM watsonx.ai',
-    summary: "A Retrieval-Augmented Generation (RAG) chatbot that lets users upload any PDF document and ask natural-language questions against it — grounded in the document's actual content, not hallucinated guesses.",
-    purpose:
-      'Built to demonstrate end-to-end RAG pipeline engineering: document ingestion, semantic chunking, vector embedding, similarity retrieval, and LLM-powered answer synthesis — using IBM watsonx.ai and LangChain as the AI backbone.',
-    tech: ['Python', 'LangChain', 'IBM watsonx.ai', 'Mistral-Medium LLM', 'IBM Slate-125m Embeddings', 'ChromaDB', 'Gradio', 'PyPDFLoader'],
-    githubLink: 'https://github.com/uongseyha/ai-rag-chatbot'
+    title: 'AI Document RAG QA Multi-Agents on LangGraph',
+    summary: 'A document question-answering system that uses a multi-agent pipeline built on LangGraph to deliver accurate, verified answers from uploaded documents — rejecting off-topic queries and re-researching when answers fail verification.',
+    purpose: 'Build a self-correcting document Q&A system that refuses off-topic questions, generates grounded answers using only evidence from uploaded documents, verifies every answer for factual support, and supports multiple document formats with a simple drag-and-drop web UI.',
+    tech: ['Python', 'LangGraph', 'OpenAI GPT-4o-mini', 'ChromaDB', 'BM25', 'Docling', 'Gradio', 'LangChain'],
+    githubLink: 'https://github.com/uongseyha/ai-doc-rag-qa-multi-agents-langGraph'
   },
   {
     title: 'AI RAG YouTube Summarizer',
@@ -169,5 +168,13 @@ export const LIVE_DEMO_PROJECTS: LiveDemoProject[] = [
       'Built to demonstrate RAG pipeline engineering for video content: transcript extraction via youtube-transcript-api, text chunking, vector embedding with IBM Slate-30m, FAISS similarity retrieval, and LLM-powered summarization and Q&A using IBM WatsonX Mistral-Medium — all served through a Gradio web UI.',
     tech: ['Python', 'LangChain', 'IBM watsonx.ai', 'Mistral-Medium LLM', 'IBM Slate-30m Embeddings', 'FAISS', 'Gradio', 'youtube-transcript-api'],
     githubLink: 'https://github.com/uongseyha/ai-youtube-summarizer'
+  },
+  {
+    title: 'AI RAG Chatbot — PDF Q&A with IBM watsonx.ai',
+    summary: "A Retrieval-Augmented Generation (RAG) chatbot that lets users upload any PDF document and ask natural-language questions against it — grounded in the document's actual content, not hallucinated guesses.",
+    purpose:
+      'Built to demonstrate end-to-end RAG pipeline engineering: document ingestion, semantic chunking, vector embedding, similarity retrieval, and LLM-powered answer synthesis — using IBM watsonx.ai and LangChain as the AI backbone.',
+    tech: ['Python', 'LangChain', 'IBM watsonx.ai', 'Mistral-Medium LLM', 'IBM Slate-125m Embeddings', 'ChromaDB', 'Gradio', 'PyPDFLoader'],
+    githubLink: 'https://github.com/uongseyha/ai-rag-chatbot'
   }
 ];
