@@ -4,7 +4,7 @@ export const NAME = 'Seyha Uong';
 export const ROLE = 'Senior .NET Full Stack Developer';
 
 export const QUICK_FACTS: string[] = [
-  'Cloud-native SaaS at 100K+ user scale',
+  'Cloud-native SaaS at 100K+ users scale',
   'C#, Python, .NET 8, Angular 18, MS Azure, SQL/NO-SQL, AI-assisted, Vibe Coding'
 ];
 
@@ -149,20 +149,24 @@ export const SKILL_GROUPS: SkillGroup[] = [
 
 export const CERTIFICATIONS: Certification[] = [
   {
-    title: 'IBM: RAG for Generative AI Applications Specialization',
-    link: 'https://www.credly.com/badges/c15f2b9d-d16d-40cc-9eab-93506297a8f1'
+    title: 'IBM: Building AI Agents and Agentic Workflows Specialization',
+    link: 'https://www.credly.com/badges/ca36b6c2-b52c-41a0-9292-043092bdb95c'
   },
   {
-    title: 'IBM: Advanced RAG with Vector Databases and Retrievers',
-    link: 'https://www.credly.com/badges/0abd2fd9-10c2-4907-a13e-f52358b3bc35'
+    title: 'IBM: RAG for Generative AI Applications Specialization',
+    link: 'https://www.credly.com/badges/c15f2b9d-d16d-40cc-9eab-93506297a8f1'
   },
   {
     title: 'IBM: Agentic AI with LangChain and LangGraph',
     link: 'https://www.credly.com/badges/a75bc271-f060-44e4-aaf9-60abad163a84'
   },
   {
-    title: 'IBM: Fundamentals of Building AI Agents',
-    link: 'https://www.credly.com/badges/e0303021-8e44-4c98-82a2-e6a42576258a'
+    title: 'IBM: Agentic AI with LangGraph, CrewAI, AutoGen and BeeAI',
+    link: 'https://www.credly.com/badges/3bd6b1ec-d3f8-4261-bf81-ff924f41db49'
+  },
+  {
+    title: 'IBM: Python for Data Science, AI & Development',
+    link: 'https://www.credly.com/badges/04608bda-91fa-42aa-aaa9-9425f62d7f53'
   },
   {
     title: 'IBM: Build Multimodal Generative AI Applications',
