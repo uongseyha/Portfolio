@@ -157,12 +157,12 @@ export const CERTIFICATIONS: Certification[] = [
     link: 'https://www.credly.com/badges/c15f2b9d-d16d-40cc-9eab-93506297a8f1'
   },
   {
-    title: 'IBM: Agentic AI with LangChain and LangGraph',
-    link: 'https://www.credly.com/badges/a75bc271-f060-44e4-aaf9-60abad163a84'
-  },
-  {
     title: 'IBM: Agentic AI with LangGraph, CrewAI, AutoGen and BeeAI',
     link: 'https://www.credly.com/badges/3bd6b1ec-d3f8-4261-bf81-ff924f41db49'
+  },
+  {
+    title: 'IBM: Agentic AI with LangChain and LangGraph',
+    link: 'https://www.credly.com/badges/a75bc271-f060-44e4-aaf9-60abad163a84'
   },
   {
     title: 'IBM: Python for Data Science, AI & Development',
